@@ -13,6 +13,7 @@
 *{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    color: var(--VeryDarkCyan);
 }
 .hero{
     background-image: url(./images/bg-hero-desktop.svg);
@@ -63,7 +64,7 @@
 
 .sub-left-title{
     
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
     color: var(--VeryDarkCyan);
 }
@@ -94,4 +95,105 @@
     text-align: center;
     font-weight: 700;
     border-radius: 30px;
+}
+
+.threeCards{
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    padding: 100px;
+}
+
+.card-1, .card-2, .card-3{
+    display: flex;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    min-height: 300px;
+    border: 0px solid var(--GrayishBlue);
+    box-shadow: 1px 1px 15px var(--GrayishBlue);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+
+    
+}
+
+.card-1,.card-3{
+    flex-direction: row-reverse;
+
+}
+
+.card-side-section{
+    width: 50%;
+    padding: 20px;
+}
+
+.threeCards img{
+    padding: 10px;
+    width: 350px;
+    float: right;
+    
+}
+
+.card-2 img{
+    float: left;
+}
+
+.card-side-details{
+    width: 40%;
+
+}
+
+.card-title{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.card-content{
+    color: var(--GrayishBlue);
+
+}
+
+.floatingContainer{
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    border: 0px solid var(--GrayishBlue);
+    box-shadow: 1px 1px 15px var(--GrayishBlue);
+    border-radius: 10px;
+    width: 50%;
+    min-height:100px;
+    margin: 5px auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.floatTitle{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--VeryDarkCyan);
+}
+
+.floatingContainer-btn{
+    margin-top: 15px;
+    background-color: var(--Pink);
+    width: 200px;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 30px;
+}
+
+.footerContainer{
+    min-height: 350px;
+    padding: 30px;
+    background-color: var(--VeryDarkCyan);
+    color: white;
+    display: flex;
+}
+.footer-logo{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(262deg) brightness(103%) contrast(103%);
 }
